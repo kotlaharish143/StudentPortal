@@ -1,0 +1,20 @@
+.Headerh1{
+font-size:70px;
+margin-top:160px;
+}
+
+.HeaderImg{
+   margin-top: 80px; 
+margin-left:60px
+}
+
+.inner{
+    
+}
+
+
+@media only screen and (max-width:768px){
+    .Headerh1{
+
+    }
+}

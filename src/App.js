@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import cse from './components/Cse'
+import Infra from './components/infra'
+import Vision from './components/Vision'
+import Login from './components/Login'
+import Forum from './components/Forum'
+import Footer from './components/Footer'
+import pdf from './components/pdf'
+import Cardcontainer from './components/Cardcontainer'
 import './App.css';
+import Portfolio from './components/portfolio'
+import course from './components/course'
 
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+  <Navbar />
+  <Route path="/" exact component={Header}/>
+  <Route path="/" exact component={Cardcontainer}/>
+  <Route path="/Login" component={Login} />
+  <Route path="/AboutCSE" component={cse} />
+  <Route path="/Vision&Mission" component={Vision} />
+  <Route path="/AboutIfrastructure" component={Infra} />
+  <Route path="/Forum" component={Forum} />
+  <Route path="/Video" exact component={Footer} />
+  <Route path="/pdf" exact component={pdf} />
+  <Route path="/course" exact component={course} />
+   <Route path="/portfolio" component={Portfolio} />
+  </Router>
+  </div>
   );
 }
 
