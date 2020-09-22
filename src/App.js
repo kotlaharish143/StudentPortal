@@ -11,8 +11,8 @@ import pdf from './components/pdf'
 import Cardcontainer from './components/Cardcontainer'
 import './App.css';
 import Portfolio from './components/portfolio'
-import course from './components/course'
-
+import Gallery from './components/Gallery'
+import student from './components/Student'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 function App() {
   return (
@@ -28,7 +28,9 @@ function App() {
   <Route path="/Forum" component={Forum} />
   <Route path="/Video" exact component={Footer} />
   <Route path="/pdf" exact component={pdf} />
-  <Route path="/course" exact component={course} />
+  <Route path="/Student" exact component={student} />
+  <Route path="/Faculty" exact component={student} />
+  <Route path="/Gallery" exact component={Gallery} />
    <Route path="/portfolio" component={Portfolio} />
   </Router>
   </div>

@@ -11,7 +11,7 @@ export default function MyNavbar(){
     <Nav className="mr-auto">
     
       <Nav.Link  href="#features">Resources</Nav.Link>
-      <Nav.Link href="#pricing">Some Other</Nav.Link>
+      <Link to="/Gallery"><Nav.Link href="#Gallery">Gallery</Nav.Link></Link>
       <NavDropdown title="Courses" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">P.H.D regular</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">P.H.D Part-time </NavDropdown.Item>
